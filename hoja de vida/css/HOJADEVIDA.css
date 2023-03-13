@@ -1,3 +1,60 @@
 p{
     position: absolute;
 }
+
+.PaginaPrincipal{
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "datosPersonales"
+    "contacto"
+    "perfilProfesional"
+    "formacionAcademica"
+    "ReferenciasPersonales";
+    /* grid-template-columns: 200px calc(100% - 200px); */
+    grid-template-columns: 1fr;
+    grid-template-rows: 0px ;
+    grid-gap: 100px;
+}
+
+.PaginaPrincipal header{
+    grid-area: cabecera;
+}
+
+.PaginaPrincipal div{
+    grid-area: datosPersonales;
+}
+
+.PaginaPrincipal div{
+    grid-area: contacto;
+}
+
+.PaginaPrincipal div{
+    grid-area: perfilProfesional;
+}
+
+.PaginaPrincipal div{
+    grid-area: formacionAcademica;
+}
+
+.PaginaPrincipal div{
+    grid-area: ReferenciasPersonales;
+}
+
+.PaginaPrincipal div{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.PaginaPrincipal ul li{
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    word-spacing: 10px;
+    text-decoration: none;
+    padding: 10px;
+}
